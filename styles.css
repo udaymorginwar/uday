@@ -1,0 +1,92 @@
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* Layout */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Uploader */
+.uploader {
+  border: 2px dashed #ddd;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  transition: border-color .3s;
+  cursor: pointer;
+}
+.uploader:hover { border-color: #aaa; }
+.uploader p { margin-top: 0.5rem; color: #888; }
+.uploader button {
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .3s;
+}
+.uploader button:hover { background: #0051cc; }
+
+/* Preview + controls */
+.hidden { display: none; }
+
+.preview {
+  margin-top: 1.5rem;
+}
+canvas {
+  width: 100%;
+  border-radius: 0.5rem;
+  background: #eee;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.controls button,
+.controls a {
+  flex: 1;
+  margin: 0 .25rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.controls button {
+  background: #28a745;
+  color: #fff;
+}
+.controls button:hover { background: #218838; }
+.controls a {
+  background: #17a2b8;
+  color: #fff;
+}
+.controls a:hover { background: #117a8b; }
